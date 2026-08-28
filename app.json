@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "DEADRUN",
+    "slug": "deadrun",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "deadrun",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#05070A",
+    "primaryColor": "#7CFF4F",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.canel.deadrun",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "DEADRUN places the horde on the real streets around you and tracks how far you run to escape."
+      }
+    },
+    "android": {
+      "package": "com.canel.deadrun",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#05070A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.VIBRATE"
+      ],
+      "blockedPermissions": [
+        "android.permission.ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "recordAudioAndroid": false,
+          "enableBackgroundPlayback": false,
+          "enableBackgroundRecording": false
+        }
+      ],
+      "expo-build-properties",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "DEADRUN places the horde on the real streets around you and tracks how far you run to escape.",
+          "isAndroidBackgroundLocationEnabled": false,
+          "isAndroidForegroundServiceEnabled": false
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#05070A"
+        }
+      ]
+    ]
+  }
+}
