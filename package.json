@@ -34,10 +34,11 @@
     "sim": "tsx scripts/simulate.ts",
     "build:audio": "node scripts/make-audio.js",
     "build:icons": "node scripts/make-icons.js",
-    "assets": "npm run build:audio && npm run build:icons",
+    "assets": "npm run build:audio && npm run build:icons && npm run build:banner",
     "check:tiles": "tsx scripts/check-tiles.ts",
     "apk": "node scripts/build-apk.mjs",
-    "share": "node scripts/serve-apk.mjs"
+    "share": "node scripts/serve-apk.mjs",
+    "build:banner": "node scripts/make-banner.js"
   },
   "private": true
 }
