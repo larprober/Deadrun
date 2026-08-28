@@ -1,0 +1,43 @@
+{
+  "name": "deadrun",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~57.0.14",
+    "expo-audio": "~57.0.3",
+    "expo-build-properties": "~57.0.12",
+    "expo-haptics": "~57.0.1",
+    "expo-keep-awake": "~57.0.1",
+    "expo-linear-gradient": "~57.0.1",
+    "expo-location": "~57.0.11",
+    "expo-splash-screen": "~57.0.7",
+    "expo-status-bar": "~57.0.1",
+    "expo-system-ui": "~57.0.2",
+    "react": "19.2.3",
+    "react-native": "0.86.2",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-svg": "15.15.4"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "sharp": "^0.35.3",
+    "tsx": "^4.23.12",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "sim": "tsx scripts/simulate.ts",
+    "build:audio": "node scripts/make-audio.js",
+    "build:icons": "node scripts/make-icons.js",
+    "assets": "npm run build:audio && npm run build:icons",
+    "check:tiles": "tsx scripts/check-tiles.ts",
+    "apk": "node scripts/build-apk.mjs",
+    "share": "node scripts/serve-apk.mjs"
+  },
+  "private": true
+}
