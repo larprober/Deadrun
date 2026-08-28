@@ -1,4 +1,6 @@
-# DEADRUN
+<p align="center">
+  <img src="assets/banner.png" alt="DEADRUN — the horde spawns on your real streets, you escape by running" width="100%">
+</p>
 
 A GPS chase game. It spawns a horde on the real streets around wherever you are
 standing, they walk toward your actual position, and the only control is your
